@@ -68,11 +68,11 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Image
-            src="/logo-reina-loja.png"
+            src="/logoReinado.png"
             alt="Reina de Loja"
-            width={150}
+            width={170}
             height={60}
-            className={`h-14 w-auto transition-all duration-300 ${scrolled ? "" : "bg-white/80 p-1 rounded"}`}
+            className={`h-14 w-auto transition-all duration-300 ${scrolled ? "" : " p-1 rounded"}`}
           />
         </div>
 

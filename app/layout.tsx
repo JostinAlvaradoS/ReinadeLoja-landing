@@ -9,10 +9,13 @@ const playfair = Playfair_Display({
 })
 
 export const metadata = {
-  title: "Camila Muñoz Neira - Reina de Loja 2024",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+  },
+  title: "Reinas de Loja 2024 - 2025",
   description:
-    "Sitio oficial de la Reina de Loja 2024, Camila Muñoz Neira. Conoce su proyecto social de apadrinamiento de niños.",
-    generator: 'v0.dev'
+    "Sitio oficial de la Reina de Loja 2024 - 2025.",
 }
 
 export default function RootLayout({
@@ -34,3 +37,4 @@ export default function RootLayout({
 
 
 import './globals.css'
+import { icons } from "lucide-react"

@@ -46,7 +46,7 @@ export function RoyalCourt() {
       isSecondary: true,
     },
     {
-      name: "Wendy Alexandra Sarmiento",
+      name: "Wendy Sarmiento Castillo",
       title: "Reina del Turismo Loja 2024",
       image: "/wendyFoto.webp",
       description:

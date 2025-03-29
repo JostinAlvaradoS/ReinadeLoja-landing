@@ -33,7 +33,7 @@ export function ProjectsSection() {
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-25%20at%2018.42.03_c85020ae.jpg-xM3fMzlXFazQgy83N1a7Z8WwzjOq5m.jpeg",
       queenName: "Camila Muñoz Neira",
-      shortName: "Camila",
+      shortName: "Camila M.",
       queenTitle: "Reina de Loja 2024",
       queenImage:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camila.jpg-cAZMPIotFwRrb8eo5RjNp0pksqttvo.jpeg",
@@ -51,7 +51,7 @@ export function ProjectsSection() {
       ],
       image: "/proyectos/Lola_proyecto.webp",
       queenName: "María Dolores Samaniego",
-      shortName: "María",
+      shortName: "María D.",
       queenTitle: "Reina Fundación Loja 2024",
       queenImage: "/lola-new.jpg",
     },
@@ -68,7 +68,7 @@ export function ProjectsSection() {
       ],
       image: "/placeholder.svg?height=400&width=600",
       queenName: "Claudia Guachizaca Peralta",
-      shortName: "Claudia",
+      shortName: "Claudia G.",
       queenTitle: "Reina Federal Loja 2024",
       queenImage: "/claudia-new.jpg",
     },
@@ -84,8 +84,8 @@ export function ProjectsSection() {
         "Encontrar hogares llenos de amor para perritos abandonados",
       ],
       image: "/proyectos/Wendy_proyecto.webp",
-      queenName: "Wendy Alexandra Sarmiento",
-      shortName: "Wendy",
+      queenName: "Wendy Sarmiento Castillo",
+      shortName: "Wendy S.",
       queenTitle: "Reina del Turismo Loja 2024",
       queenImage: "/wendyFoto.webp",
     },
@@ -102,7 +102,7 @@ export function ProjectsSection() {
           >
             <span className="block md:hidden">{project.shortName}</span>
             <span className="hidden md:block">
-              {project.queenName.split(" ")[0]} {project.queenName.split(" ")[1]}
+              {project.queenName.split(" ")[0]} {project.queenName.split(" ")[1]} {project.queenName.split(" ")[2]}
             </span>
           </TabsTrigger>
         ))}

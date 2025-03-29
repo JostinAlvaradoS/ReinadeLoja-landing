@@ -203,14 +203,14 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center gap-6 mb-6 md:mb-0">
               <Image
-                src="/logo-reina-loja.png"
+                src="/favicon.ico"
                 alt="Reina de Loja"
                 width={180}
                 height={70}
-                className="h-20 w-auto bg-white/90 p-2 rounded"
+                className="h-16 w-auto p-2 rounded"
               />
               <div className="h-8 w-px bg-white/30 hidden md:block"></div>
-              <span className="font-serif text-2xl">Reinado de Loja 2024</span>
+              <span className="font-serif text-2xl">Reina de Loja 2024 - 2025</span>
             </div>
             <div className="flex gap-6">
               <a href="#" className="hover:text-[#D8B4A0] transition-colors">
