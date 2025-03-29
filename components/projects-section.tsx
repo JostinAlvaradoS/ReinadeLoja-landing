@@ -33,7 +33,7 @@ export function ProjectsSection() {
       image:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-25%20at%2018.42.03_c85020ae.jpg-xM3fMzlXFazQgy83N1a7Z8WwzjOq5m.jpeg",
       queenName: "Camila Muñoz Neira",
-      shortName: "Camila M.",
+      shortName: "Camila",
       queenTitle: "Reina de Loja 2024",
       queenImage:
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camila.jpg-cAZMPIotFwRrb8eo5RjNp0pksqttvo.jpeg",
@@ -49,9 +49,9 @@ export function ProjectsSection() {
         "Actividades intergeneracionales para fortalecer vínculos",
         "Mantener viva la memoria de la ciudad a través de quienes la construyeron",
       ],
-      image: "/proyectos/Lola_proyecto.webp",
+      image: "/placeholder.svg?height=400&width=600",
       queenName: "María Dolores Samaniego",
-      shortName: "María D.",
+      shortName: "María",
       queenTitle: "Reina Fundación Loja 2024",
       queenImage: "/lola-new.jpg",
     },
@@ -68,7 +68,7 @@ export function ProjectsSection() {
       ],
       image: "/placeholder.svg?height=400&width=600",
       queenName: "Claudia Guachizaca Peralta",
-      shortName: "Claudia G.",
+      shortName: "Claudia",
       queenTitle: "Reina Federal Loja 2024",
       queenImage: "/claudia-new.jpg",
     },
@@ -83,11 +83,11 @@ export function ProjectsSection() {
         "Brindar cariño y ayuda a los animales que más lo necesitan",
         "Encontrar hogares llenos de amor para perritos abandonados",
       ],
-      image: "/proyectos/Wendy_proyecto.webp",
-      queenName: "Wendy Sarmiento Castillo",
-      shortName: "Wendy S.",
+      image: "/placeholder.svg?height=400&width=600",
+      queenName: "Wendy Alexandra Sarmiento",
+      shortName: "Wendy",
       queenTitle: "Reina del Turismo Loja 2024",
-      queenImage: "/wendyFoto.webp",
+      queenImage: "/placeholder.svg?height=200&width=200",
     },
   ]
 
@@ -98,11 +98,11 @@ export function ProjectsSection() {
           <TabsTrigger
             key={index}
             value={index === 0 ? "camila" : index === 1 ? "lola" : index === 2 ? "claudia" : "wendy"}
-            className="data-[state=active]:bg-[#D8B4A0] data-[state=active]:text-white py-3 text-base"
+            className="py-3 text-base data-[state=active]:text-[#D8B4A0] data-[state=active]:underline data-[state=active]:bg-[#FDF6F0] data-[state=active]:shadow-none"
           >
             <span className="block md:hidden">{project.shortName}</span>
             <span className="hidden md:block">
-              {project.queenName.split(" ")[0]} {project.queenName.split(" ")[1]} {project.queenName.split(" ")[2]}
+              {project.queenName.split(" ")[0]} {project.queenName.split(" ")[1]}
             </span>
           </TabsTrigger>
         ))}

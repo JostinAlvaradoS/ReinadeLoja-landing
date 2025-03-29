@@ -3,9 +3,12 @@
 import { useRef, useEffect, useState } from "react"
 import Image from "next/image"
 import { ScaleIn } from "@/components/animations"
+import { ImageLightbox } from "./image-lightbox"
 
 export function Gallery() {
   const [isVisible, setIsVisible] = useState(false)
+  const [lightboxOpen, setLightboxOpen] = useState(false)
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const ref = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
@@ -101,18 +104,26 @@ export function Gallery() {
     },
   ]
 
-  // Duplicar las imágenes para crear un efecto de desplazamiento infinito
   const duplicatedImages = [...images, ...images]
 
+  const handleImageClick = (index: number) => {
+    setCurrentImageIndex(index)
+    setLightboxOpen(true)
+  }
+
   return (
-    <div className="space-y-12" ref={ref}>
+       <div className="space-y-12" ref={ref}>
       <ScaleIn>
         <div className="overflow-hidden relative">
           <div className="relative w-full">
             {/* Primera fila */}
             <div className="flex animate-scroll">
-              {duplicatedImages.map((image, index) => (
-                <div key={`row1-${index}`} className="min-w-[33.33%] p-3">
+              {images.map((image, index) => (
+                <div
+                  key={`row1-${index}`}
+                  className="min-w-[66.33%] p-3"
+                  onClick={() => handleImageClick(index)}
+                >
                   <div className="relative overflow-hidden rounded-xl shadow-md group transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
                     <div className="aspect-square relative">
                       <Image
@@ -131,33 +142,48 @@ export function Gallery() {
                 </div>
               ))}
             </div>
-
+    
             {/* Segunda fila - dirección opuesta */}
             <div className="flex animate-scroll-reverse mt-6">
-              {[...duplicatedImages].reverse().map((image, index) => (
-                <div key={`row2-${index}`} className="min-w-[33.33%] p-3">
-                  <div className="relative overflow-hidden rounded-xl shadow-md group transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
-                    <div className="aspect-square relative">
-                      <Image
-                        src={image.src || "/placeholder.svg"}
-                        alt={image.alt}
-                        fill
-                        quality={95}
-                        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                        className="object-cover transition-transform duration-500 group-hover:scale-110"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <p className="text-white p-4 text-sm font-medium">{image.alt}</p>
+              {images
+                .slice()
+                .reverse()
+                .map((image, index) => (
+                  <div
+                    key={`row2-${index}`}
+                    className="min-w-[66.33%] p-3"
+                    onClick={() => handleImageClick(images.length - 1 - index)}
+                  >
+                    <div className="relative overflow-hidden rounded-xl shadow-md group transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
+                      <div className="aspect-square relative">
+                        <Image
+                          src={image.src || "/placeholder.svg"}
+                          alt={image.alt}
+                          fill
+                          quality={95}
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
+                          <p className="text-white p-4 text-sm font-medium">{image.alt}</p>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                ))}
             </div>
           </div>
         </div>
       </ScaleIn>
-
+    
+      {/* Lightbox */}
+      <ImageLightbox
+        images={images}
+        initialIndex={currentImageIndex}
+        isOpen={lightboxOpen}
+        onClose={() => setLightboxOpen(false)}
+      />
+      
       <ScaleIn className="mt-16">
         <h3 className="font-serif text-2xl text-center text-[#9D8189] mb-6">Momentos Destacados</h3>
         <p className="text-center text-[#9D8189] max-w-3xl mx-auto mb-8">

@@ -91,7 +91,7 @@
   overflow-x: hidden;
 }
 
-/* Animaciones para el slider infinito */
+/* Animaciones para el slider infinito - VELOCIDAD AUMENTADA */
 @keyframes scroll {
   0% {
     transform: translateX(0);
@@ -110,14 +110,29 @@
   }
 }
 
+/* Velocidad aumentada: cambiado de 60s a 30s */
 .animate-scroll {
-  animation: scroll 60s linear infinite;
+  animation: scroll 6s linear infinite;
   width: fit-content;
   display: flex;
 }
 
+/* Velocidad aumentada: cambiado de 60s a 30s */
 .animate-scroll-reverse {
-  animation: scroll-reverse 60s linear infinite;
+  animation: scroll-reverse 6s linear infinite;
+  width: fit-content;
+  display: flex;
+}
+
+/* Velocidad rápida - Opción alternativa */
+.animate-scroll-fast {
+  animation: scroll 5s linear infinite;
+  width: fit-content;
+  display: flex;
+}
+
+.animate-scroll-reverse-fast {
+  animation: scroll-reverse 15s linear infinite;
   width: fit-content;
   display: flex;
 }

@@ -19,7 +19,7 @@ type RoyalMember = {
 export function RoyalCourt() {
   const royalMembers: RoyalMember[] = [
     {
-      name: "María Dolores Samaniego",
+      name: "María Dolores Samaniego Ordóñez",
       title: "Reina de la Fundación de Loja 2024",
       image: "/lola-new.jpg",
       description:
@@ -28,7 +28,7 @@ export function RoyalCourt() {
       isSecondary: true,
     },
     {
-      name: "Camila Muñoz Neira",
+      name: "Camila Elizabeth Muñoz Neira",
       title: "Reina de Loja 2024",
       image: "camila.webp",
       description:
@@ -37,16 +37,16 @@ export function RoyalCourt() {
       isMain: true,
     },
     {
-      name: "Claudia Guachizaca Peralta",
+      name: "Claudia Alejandra Guachizaca Peralta",
       title: "Reina Loja Federal 2024",
-      image: "/claudia-new.jpg",
+      image: "/claudia2.jpg",
       description:
         "Su visión se enfoca en la unidad y solidaridad, promoviendo la colaboración entre los sectores de la sociedad.",
       project: "Tejiendo Ilusiones",
       isSecondary: true,
     },
     {
-      name: "Wendy Sarmiento Castillo",
+      name: "Wendy Alexandra Sarmiento Castillo",
       title: "Reina del Turismo Loja 2024",
       image: "/wendyFoto.webp",
       description:
