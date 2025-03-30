@@ -18,15 +18,16 @@ export function TestimonialSection() {
             <SlideInLeft>
               <div className="bg-[#FDF6F0] p-8 rounded-xl shadow-md">
                 <p className="text-[#9D8189] italic mb-6 text-lg leading-relaxed">
-                  "El trabajo que realiza Camila con los niños de las casas hogares ha sido transformador. Su dedicación
-                  y compromiso han traído esperanza a muchos pequeños que necesitan apoyo y cariño."
+                "Camila, no solamente es una reina de belleza, su carisma y sensibilidad son increíbles, cuando de ayudar y atender se trata. Con las personas cuidadoras a familiares con discapacidad han constituido un fuerte grupo de apoyo y cariño, fortaleciendo el autoestima de los cuidadores.
+                  Su trabajo es encomiable en la ayuda social.
+                  Si así es su reinado con tanto trabajo, que siga reinando muchos años más."
                 </p>
                 <div className="flex items-center">
                   <div className="mr-5">
                     <div className="w-16 h-16 rounded-full overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=64&width=64"
-                        alt="Directora Casa Hogar"
+                        src="/testimonios/autorCamila.webp"
+                        alt="Dra. Mercedes León O."
                         width={64}
                         height={64}
                         className="object-cover"
@@ -34,8 +35,8 @@ export function TestimonialSection() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#9D8189] text-lg">María Sánchez</h4>
-                    <p className="text-[#9D8189]/70">Directora Casa Hogar "Esperanza"</p>
+                    <h4 className="font-medium text-[#9D8189] text-lg">Dra. Mercedes León O.</h4>
+                    <p className="text-[#9D8189]/70">Mujer rotaria, Madre Símbolo y Mujer del año 2023</p>
                   </div>
                 </div>
               </div>
@@ -47,7 +48,7 @@ export function TestimonialSection() {
                 <div className="absolute -inset-6 rounded-2xl bg-gradient-to-r from-[#D8B4A0]/30 to-[#9D8189]/30 blur-lg"></div>
                 <div className="relative overflow-hidden rounded-2xl border-4 border-white shadow-lg">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-25%20at%2018.44.12_3d01ac31.jpg-p6vnixIWxXQMpvY9GGlNtDIjKa8Jeo.jpeg"
+                    src="/testimonios/camilaTestimonio.webp"
                     alt="Camila en visita comunitaria"
                     width={600}
                     height={400}
@@ -68,7 +69,7 @@ export function TestimonialSection() {
                 <div className="absolute -inset-6 rounded-2xl bg-gradient-to-r from-[#D8B4A0]/30 to-[#9D8189]/30 blur-lg"></div>
                 <div className="relative overflow-hidden rounded-2xl border-4 border-white shadow-lg">
                   <Image
-                    src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-25%20at%2018.42.04_e2059dd1.jpg-0mP0EtmKhZrEcgsOnOejg87qZvFBEB.jpeg"
+                    src="/testimonios/lolaTestimonio.webp"
                     alt="Camila con niños de la comunidad"
                     width={600}
                     height={400}
@@ -84,16 +85,15 @@ export function TestimonialSection() {
             <SlideInRight>
               <div className="bg-[#FDF6F0] p-8 rounded-xl shadow-md">
                 <p className="text-[#9D8189] italic mb-6 text-lg leading-relaxed">
-                  "El programa de apadrinamiento impulsado por nuestra Reina de Loja ha permitido que muchos niños
-                  reciban educación, atención médica y el cariño que tanto necesitan. Es un orgullo para nuestra ciudad
-                  contar con una representante tan comprometida con las causas sociales."
+                  "El trabajo social que realiza María Dolores deja una huella indeleble en las mentes y corazones de los niños, 
+                  así como en todos los habitantes de Loja."
                 </p>
                 <div className="flex items-center">
                   <div className="mr-5">
                     <div className="w-16 h-16 rounded-full overflow-hidden">
                       <Image
-                        src="/placeholder.svg?height=64&width=64"
-                        alt="Alcalde de Loja"
+                        src="/testimonios/autorLola.webp"
+                        alt="Fernando Pitizaca"
                         width={64}
                         height={64}
                         className="object-cover"
@@ -101,8 +101,8 @@ export function TestimonialSection() {
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium text-[#9D8189] text-lg">Carlos Rodríguez</h4>
-                    <p className="text-[#9D8189]/70">Autoridad Municipal</p>
+                    <h4 className="font-medium text-[#9D8189] text-lg">Fernando Pitizaca</h4>
+                    <p className="text-[#9D8189]/70">Director de cultura del Municipio de Loja</p>
                   </div>
                 </div>
               </div>

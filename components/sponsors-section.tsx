@@ -26,6 +26,36 @@ export function SponsorsSection() {
       logo: "/sponsors/nievecitas.jpeg",
       url: "#",
     },
+    {
+      name: "Angelica Arevalo",
+      logo: "/sponsors/angArevalo.jpg",
+      url: "#",
+    },
+    {
+      name: "Banco de Loja",
+      logo: "/sponsors/bcoLoja.jpg",
+      url: "#",
+    },
+    {
+      name: "Nievecitas",
+      logo: "/sponsors/coop.jpg",
+      url: "#",
+    },
+    {
+      name: "Velocity",
+      logo: "/sponsors/velocity.webp",
+      url: "#",
+    },
+    {
+      name: "Macon",
+      logo: "/sponsors/macon.png",
+      url: "#",
+    },
+    {
+      name: "Dali",
+      logo: "/sponsors/Dali.png",
+      url: "#",
+    },
   ]
 
   return (

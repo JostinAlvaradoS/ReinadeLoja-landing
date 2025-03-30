@@ -40,67 +40,87 @@ export function Gallery() {
   const images = [
     {
       src: "gallery/1.webp",
-      alt: "Reinas de Loja participando en evento ciclístico comunitario",
+      alt: "Navidad Solidaria: llevando alegría y amor a los Niños del barrio La Banda Alto",
     },
     {
       src: "gallery/2.webp",
-      alt: "Reinas de Loja en evento navideño con artesanos locales",
+      alt: "Reina de Loja, fundación y loja federal, en conjunto con el Juez y el Director de la Judicatura, en la presentación del libro 'Derechos de la Niñez y la Adolescencia', de autoría del Dr. Luis Samaniego",
     },
     {
       src: "gallery/3.webp",
-      alt: "Reinas de Loja en recepción oficial con autoridades",
+      alt: "Reinas de Loja junto al alcalde y personal municipal durante el desfile en conmemoración de los 476 años de fundación de la ciudad.",
     },
     {
       src: "gallery/4.webp",
-      alt: "Reinas de Loja con representantes comunitarios en evento al aire libre",
+      alt: "Reinas de Loja en inauguración del salón social “Dr. bolivar Guerrero” del colegio de abogados de loja",
     },
     {
       src: "gallery/5.webp",
-      alt: "Reinas de Loja con niños beneficiarios del proyecto social",
+      alt: "Reinas de Loja, Reina de la Posta de la Lojanidad, el Alcalde y ciudadanos en la Posta Barrial.",
     },
     {
       src: "gallery/6.webp",
-      alt: "Reinas de Loja en ceremonia oficial con autoridades",
+      alt: "Reinas de loja en evento “rodada de altura” en conmemoración al 8 de marzo",
     },
     {
       src: "gallery/7.webp",
-      alt: "Reinas de Loja en evento comunitario con niños y educadores",
+      alt: "Reina de loja y reina de fundación en campaña “dulces sonrisas navideñas”",
     },
     {
       src: "gallery/8.webp",
-      alt: "Reinas de Loja con funcionarios públicos en evento oficial",
+      alt: "Reinas de Loja conmemorando el Día Mundial de la Discapacidad, promoviendo la inclusión y el respeto por la diversidad.",
     },
     {
       src: "gallery/9.webp",
-      alt: "Reinas de Loja participando en evento ciclístico comunitario",
+      alt: "Reinas de Loja en visita a la Congregación de las Hermanas de la Virgen de Mátara",
     },
     {
       src: "gallery/10.webp",
-      alt: "Reinas de Loja en evento navideño con artesanos locales",
+      alt: "Reinas de Loja, junto al alcalde, la gobernadora y ciudadanos, en la feria 'Dulces de San Sebastián'",
     },
     {
       src: "gallery/11.webp",
-      alt: "Reinas de Loja en recepción oficial con autoridades",
+      alt: "Reinas de Loja rindiendo homenaje con trajes tradicionales de la mujer lojana de antaño",
     },
     {
       src: "gallery/12.webp",
-      alt: "Reinas de Loja con representantes comunitarios en evento al aire libre",
+      alt: "Reinas de Loja en rueda de prensa en el Gran Victoria Boutique Hotel, presentando sus dignidades",
     },
     {
       src: "gallery/13.webp",
-      alt: "Reinas de Loja con niños beneficiarios del proyecto social",
+      alt: "Reinas de Loja junto al equipo de Bomberos.",
     },
     {
       src: "gallery/14.webp",
-      alt: "Reinas de Loja en ceremonia oficial con autoridades",
+      alt: "Reinas de Loja participando en la eucaristía en honor a San Sebastián, patrono jurado de Loja.",
     },
     {
       src: "gallery/15.webp",
-      alt: "Reinas de Loja en evento comunitario con niños y educadores",
+      alt: "Reinas de loja y Bruno Valarezo CEO de Clipp, en inauguración de la novena edición del festival internacional de artes vivas loja.",
     },
     {
       src: "gallery/16.webp",
+      alt: 'Reinas de Loja, junto al alcalde, la presidenta del CASMUL y autoridades, en la feria artesanal "Enamórate"'
+    },
+    {
+      src: "gallery/17.webp",
       alt: "Reinas de Loja con funcionarios públicos en evento oficial",
+    },
+    {
+      src: "gallery/18.webp",
+      alt: "Reinas de Loja junto a Franco Quezada, el alcalde y su esposa, en el desfile conmemorativo por los 204 años de independencia de la ciudad.",
+    },
+    {
+      src: "gallery/19.webp",
+      alt: "Reinas de Loja en agasajo navideño para los jóvenes del Centro de Adolescentes Infractores de Loja.",
+    },
+    {
+      src: "gallery/20.webp",
+      alt: "Reinas de Loja con funcionarios públicos en evento oficial",
+    },
+    {
+      src: "gallery/21.webp",
+      alt: 'Reinas de Loja visitando a las niñas del centro "Renacer".',
     },
   ]
 
@@ -121,7 +141,7 @@ export function Gallery() {
               {images.map((image, index) => (
                 <div
                   key={`row1-${index}`}
-                  className="min-w-[66.33%] p-3"
+                  className="min-w-[55.33%] p-3"
                   onClick={() => handleImageClick(index)}
                 >
                   <div className="relative overflow-hidden rounded-xl shadow-md group transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
@@ -151,7 +171,7 @@ export function Gallery() {
                 .map((image, index) => (
                   <div
                     key={`row2-${index}`}
-                    className="min-w-[66.33%] p-3"
+                    className="min-w-[55.33%] p-3"
                     onClick={() => handleImageClick(images.length - 1 - index)}
                   >
                     <div className="relative overflow-hidden rounded-xl shadow-md group transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">

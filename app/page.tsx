@@ -16,6 +16,7 @@ import { Header } from "@/components/header"
 import { useEffect, useState } from "react"
 import { motion, useTransform, useScroll } from "framer-motion"
 import { SponsorsSection } from "@/components/sponsors-section"
+import { Footer } from "@/components/footer"
 
 export default function Home() {
   const { scrollY } = useScroll()
@@ -197,58 +198,9 @@ export default function Home() {
       {/* Sponsors Section */}
       <SponsorsSection />
 
-      {/* Footer */}
-      <footer className="bg-[#9D8189] text-white py-12 overflow-hidden">
-        <div className="container mx-auto px-6 md:px-8 lg:px-12">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="flex flex-col md:flex-row items-center gap-6 mb-6 md:mb-0">
-              <Image
-                src="/favicon.ico"
-                alt="Reina de Loja"
-                width={180}
-                height={70}
-                className="h-16 w-auto p-2 rounded"
-              />
-              <div className="h-8 w-px bg-white/30 hidden md:block"></div>
-              <span className="font-serif text-2xl">Reina de Loja 2024 - 2025</span>
-            </div>
-            <div className="flex gap-6">
-              <a href="#" className="hover:text-[#D8B4A0] transition-colors">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="28"
-                  height="28"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="lucide lucide-instagram"
-                >
-                  <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
-                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
-                  <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="mt-8 text-center text-base">
-            <p>© 2025 Reina de Loja. Todos los derechos reservados.</p>
-          </div>
-          <p className="mt-4 text-sm text-white/70 text-center">
-            Sitio web desarrollado por{" "}
-            <a
-              href="https://jostinalvaradoportafolio.web.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#D8B4A0] transition-colors underline decoration-dotted"
-            >
-              Jostin Alvarado
-            </a>
-          </p>
-        </div>
-      </footer>
+
+            {/* Footer */}
+            <Footer />
     </div>
   )
 }
