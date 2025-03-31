@@ -121,9 +121,20 @@ export function TestimonialSection() {
 
 
 
+<br />
+
+<br />
+
+<br />
+
+<br />
 
 
-        <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center mb-20">
+<br />
+
+
+
+        <div className="grid md:grid-cols-2 gap-10 lg:gap-16 items-center">
           <div className="order-2 md:order-1">
             <SlideInLeft>
               <div className="bg-[#FDF6F0] p-8 rounded-xl shadow-md">
