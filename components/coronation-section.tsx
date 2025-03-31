@@ -16,7 +16,7 @@ export function CoronationSection() {
             <div className="absolute -inset-4 rounded-lg bg-gradient-to-r from-[#D8B4A0]/30 to-[#9D8189]/30 blur-lg"></div>
             <div className="relative overflow-hidden rounded-lg border-4 border-white shadow-lg">
               <Image
-                src="/coronacion.webp"
+                src="coronacion.webp"
                 alt="Coronación del Reinado de Loja 2024"
                 width={600}
                 height={400}

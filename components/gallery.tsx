@@ -103,20 +103,12 @@ export function Gallery() {
       alt: 'Reinas de Loja, junto al alcalde, la presidenta del CASMUL y autoridades, en la feria artesanal "Enamórate"'
     },
     {
-      src: "gallery/17.webp",
-      alt: "Reinas de Loja con funcionarios públicos en evento oficial",
-    },
-    {
       src: "gallery/18.webp",
-      alt: "Reinas de Loja junto a Franco Quezada, el alcalde y su esposa, en el desfile conmemorativo por los 204 años de independencia de la ciudad.",
+      alt: "Reinas de Loja junto al alcalde y su esposa, en el desfile conmemorativo por los 204 años de independencia de la ciudad.",
     },
     {
       src: "gallery/19.webp",
       alt: "Reinas de Loja en agasajo navideño para los jóvenes del Centro de Adolescentes Infractores de Loja.",
-    },
-    {
-      src: "gallery/20.webp",
-      alt: "Reinas de Loja con funcionarios públicos en evento oficial",
     },
     {
       src: "gallery/21.webp",
@@ -215,7 +207,7 @@ export function Gallery() {
           <div className="relative group overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
             <div className="aspect-[4/3] relative">
               <Image
-                src="/momentosDestacados/momentoDestacado.webp"
+                src="momentosDestacados/momentoDestacado.webp"
                 alt="Coronación Reina de Loja y su Corte de Honor 2024"
                 fill
                 quality={95}
@@ -234,7 +226,7 @@ export function Gallery() {
           <div className="relative group overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
             <div className="aspect-[4/3] relative">
               <Image
-                src="/momentosDestacados/pregon.webp"
+                src="momentosDestacados/pregon.webp"
                 alt="Desfile de inicio de las fiestas novembrinas"
                 fill
                 quality={95}
@@ -253,7 +245,7 @@ export function Gallery() {
           <div className="relative group overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:shadow-lg transform hover:-translate-y-1">
             <div className="aspect-[4/3] relative">
               <Image
-                src="/momentosDestacados/agasajo.webp"
+                src="momentosDestacados/agasajo.webp"
                 alt="Agasajo navideño a niños de nuestro cantón"
                 fill
                 quality={95}

@@ -68,7 +68,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <div className="flex items-center gap-4">
           <Image
-            src="logoReinado.png"
+            src="logoReinado.webp"
             alt="Reina de Loja"
             width={170}
             height={60}

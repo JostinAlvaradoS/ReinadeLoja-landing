@@ -52,7 +52,7 @@ export function Footer() {
 
   // Información de contacto
   const contactInfo = {
-    email: "contacto@reinadeloja.com",
+    email: "reinadeloja24@gmail.com",
     phone: "+593 99 123 4567",
     address: "Municipio de Loja, Calle Bolívar y José Antonio Eguiguren",
     hours: "Lunes a Viernes: 9:00 - 17:00",
@@ -67,7 +67,7 @@ export function Footer() {
           <div className="lg:col-span-1">
             <div className="flex items-center">
               <Image
-                src="/logoReinado.png"
+                src="logoReinado.webp"
                 alt="Reina de Loja"
                 width={150}
                 height={60}
@@ -77,7 +77,7 @@ export function Footer() {
             <p className="text-white/80 text-sm mt-4">
               Reinado de Loja 2024-2025, comprometido con el desarrollo social y cultural de nuestra ciudad.
             </p>
-            <div className="flex items-center space-x-4 mt-4">
+            {/* <div className="flex items-center space-x-4 mt-4">
               <a
                 href="https://www.instagram.com/reinadodeloja"
                 target="_blank"
@@ -87,7 +87,7 @@ export function Footer() {
               >
                 <Instagram className="h-5 w-5" />
               </a>
-            </div>
+            </div> */}
           </div>
 
           {/* Enlaces rápidos */}

@@ -139,8 +139,8 @@ export default function Home() {
                 Próximos Eventos
               </h2>
               <p className="text-center text-[#9D8189] max-w-3xl mx-auto mb-16 text-lg md:text-xl">
-                Acompáñanos en nuestras actividades y eventos para apoyar a los niños de las casas hogares de Loja. Tu
-                presencia hace la diferencia.
+              Te invitamos a participar en las diversas actividades y eventos que estamos organizando, los cuales no solo buscan el bienestar de nuestra comunidad, 
+              sino también enriquecer nuestra historia y patrimonio cultural. Juntos, contribuimos al crecimiento y fortalecimiento de nuestra identidad.
               </p>
             </ScaleIn>
             <UpcomingEvents />

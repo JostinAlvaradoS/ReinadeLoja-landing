@@ -21,22 +21,20 @@ export function ProjectsSection() {
   const projects: Project[] = [
     {
       title: "Creciendo Contigo",
-      description:
-        "Como Reina de Loja, mi proyecto principal se enfoca en brindar apoyo integral a mujeres, niñas y adolescentes con discapacidad que residen en casas hogares, con el objetivo de transformar su día a día y mejorar su calidad de vida.",
+      description: "Como Reina de Loja, mi proyecto principal se enfoca en brindar apoyo integral a mujeres, niñas y adolescentes con discapacidad que residen en casas hogares, con el objetivo de transformar su día a día y mejorar su calidad de vida.",
       features: [
-        "Entorno de apoyo y cariño donde cada una pueda sentirse acompañada y valorada",
-        "Garantizar que nunca más se sientan solas y que cada día esté lleno de momentos de alegría",
-        "Facilitar su rutina diaria con herramientas necesarias para una vida más accesible",
-        "Fomentar su bienestar emocional y físico",
-        "Crear una red de apoyo comenzando en el Hogar San Camilo de Lellis",
+        "A través de este proyecto, quiero ofrecer un entorno lleno de apoyo y cariño, donde cada una de ellas pueda sentirse acompañada y valorada.",
+        "Mi propósito es garantizar que nunca más se sientan solas y que cada día esté lleno de momentos de alegría, dignidad y esperanza.",
+        "Además, busco facilitar su rutina diaria, proporcionando las herramientas necesarias para hacer su vida más accesible y llevadera, mientras se fomenta su bienestar emocional y físico.",
+        "La visión de 'Creciendo Contigo' es crear una red de apoyo que comience en el Hogar San Camilo de Lellis, con la meta de expandirnos y llegar a otras casas hogares de la ciudad, brindando el cuidado adecuado a todas las niñas y adolescentes que lo necesiten.",
+        "Invitamos a fisioterapeutas, médicos, psicopedagogos o estudiantes en estas áreas, empresas que deseen contribuir con recursos esenciales y a todas las personas con el corazón dispuesto a apadrinar a una niña con amor y apoyo incondicional.",
+        "Con pequeños gestos de cariño y dedicación, podemos transformar la vida de una niña sin hogar, ofreciéndole el amor y apoyo que le permita sentirse valiosa y llena de esperanza cada día."
       ],
-      image:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-03-25%20at%2018.42.03_c85020ae.jpg-xM3fMzlXFazQgy83N1a7Z8WwzjOq5m.jpeg",
+      image: "proyectos/camila.webp",
       queenName: "Camila Muñoz Neira",
       shortName: "Camila",
       queenTitle: "Reina de Loja 2024",
-      queenImage:
-        "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/camila.jpg-cAZMPIotFwRrb8eo5RjNp0pksqttvo.jpeg",
+      queenImage: "camila.webp"
     },
     {
       title: "Raíces de Amor",
@@ -49,11 +47,11 @@ export function ProjectsSection() {
         "Actividades intergeneracionales para fortalecer vínculos",
         "Mantener viva la memoria de la ciudad a través de quienes la construyeron",
       ],
-      image: "/proyectos/Lola_proyecto.webp",
+      image: "proyectos/Lola_proyecto.webp",
       queenName: "María Dolores Samaniego",
       shortName: "María",
       queenTitle: "Reina Fundación Loja 2024",
-      queenImage: "/lola-new.jpg",
+      queenImage: "lola-new.webp",
     },
     {
       title: "Tejiendo Ilusiones",
@@ -66,29 +64,28 @@ export function ProjectsSection() {
         "Promover la creatividad y el trabajo en equipo",
         "Transformar espacios públicos en lugares de esperanza y alegría",
       ],
-      image: "/proyectos/proyectoClau.webp",
+      image: "proyectos/proyectoClau.webp",
       queenName: "Claudia Guachizaca Peralta",
       shortName: "Claudia",
       queenTitle: "Reina Federal Loja 2024",
-      queenImage: "/claudia2.jpg",
+      queenImage: "claudia2.webp",
     },
     {
-      title: "Patitas de Amor",
-      description:
-        "Como Reina de Turismo, he decidido orientar mi proyecto social a aquellos que nos brindan amor incondicional: nuestros amigos peludos. No hay nada más puro que la felicidad de un perrito al recibir cariño.",
+      title: "Apadrinamiento Virtual de Perritos",
+      description: "Como Reina del turismo, propongo este proyecto con el propósito de darles una segunda oportunidad a perritos en adopción que han sido rescatados de situaciones difíciles. Muchos de ellos pasan desapercibidos debido a la falta de visibilidad, y es ahí donde cada uno de nosotros puede marcar la diferencia.",
       features: [
-        "Crear conciencia sobre la responsabilidad de tener un perro",
-        "Promover la adopción responsable de mascotas",
-        "Interactuar con perritos de diversas fundaciones",
-        "Brindar cariño y ayuda a los animales que más lo necesitan",
-        "Encontrar hogares llenos de amor para perritos abandonados",
+        "Uso de códigos QR en redes sociales y distintos espacios de la ciudad para aumentar la visibilidad de los perritos en adopción.",
+        "Acceso a una plataforma con la historia, personalidad y necesidades de cada perrito disponible para adopción.",
+        "Apadrinamiento virtual sin responsabilidades económicas ni de cuidado directo, solo difusión en redes sociales.",
+        "Posibilidad de contribuir con donaciones de alimentos, juguetes e insumos para mejorar la calidad de vida de los perritos mientras esperan un hogar.",
+        "Colaboración con rescatistas, albergues, veterinarios y empresas comprometidas con el bienestar animal."  
       ],
-      image: "/proyectos/Wendy_proyecto.webp",
-      queenName: "Wendy Alexandra Sarmiento",
+      image: "proyectos/Wendy_proyecto.webp",
+      queenName: "Wendy Sarmiento Castillo",
       shortName: "Wendy",
       queenTitle: "Reina del Turismo Loja 2024",
-      queenImage: "/wendyFoto.webp",
-    },
+      queenImage: "wendyFoto.webp"
+    }
   ]
 
   return (

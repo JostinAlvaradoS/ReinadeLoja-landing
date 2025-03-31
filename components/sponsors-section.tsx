@@ -13,47 +13,52 @@ export function SponsorsSection() {
   const sponsors: Sponsor[] = [
     {
       name: "LUXE Studio",
-      logo: "/sponsors/luxe-studio.png",
+      logo: "sponsors/luxe-studio.png",
       url: "#",
     },
     {
       name: "Isabel López Joyería",
-      logo: "/sponsors/isabel-lopez-joyeria.png",
+      logo: "sponsors/isabel-lopez-joyeria.png",
       url: "#",
     },
     {
       name: "Nievecitas",
-      logo: "/sponsors/nievecitas.jpeg",
+      logo: "sponsors/nievecitas.jpeg",
       url: "#",
     },
     {
       name: "Angelica Arevalo",
-      logo: "/sponsors/angArevalo.jpg",
+      logo: "sponsors/angArevalo.jpg",
       url: "#",
     },
     {
       name: "Banco de Loja",
-      logo: "/sponsors/bcoLoja.jpg",
+      logo: "sponsors/bcoLoja.jpg",
       url: "#",
     },
     {
       name: "Nievecitas",
-      logo: "/sponsors/coop.jpg",
+      logo: "sponsors/coop.jpg",
       url: "#",
     },
     {
       name: "Velocity",
-      logo: "/sponsors/velocity.webp",
+      logo: "sponsors/velocity.webp",
       url: "#",
     },
     {
       name: "Macon",
-      logo: "/sponsors/macon.png",
+      logo: "sponsors/macon.png",
       url: "#",
     },
     {
       name: "Dali",
-      logo: "/sponsors/Dali.png",
+      logo: "sponsors/Dali.png",
+      url: "#",
+    },
+    {
+      name: "Flash Model",
+      logo: "sponsors/flash-model.webp",
       url: "#",
     },
   ]
