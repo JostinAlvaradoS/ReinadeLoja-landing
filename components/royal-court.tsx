@@ -21,7 +21,7 @@ export function RoyalCourt() {
     {
       name: "María Dolores Samaniego Ordóñez",
       title: "Reina de la Fundación de Loja 2024",
-      image: "/lola-new.webp",
+      image: "lola-new.webp",
       description:
         "Su vocación se impulsa por el compromiso social, generando cambios y promoviendo una sociedad más empática y consciente.",
       project: "Raíces de Amor",
@@ -39,7 +39,7 @@ export function RoyalCourt() {
     {
       name: "Claudia Alejandra Guachizaca Peralta",
       title: "Reina Loja Federal 2024",
-      image: "/claudia2.webp",
+      image: "claudia2.webp",
       description:
         "Su visión se enfoca en la unidad y solidaridad, promoviendo la colaboración entre los sectores de la sociedad.",
       project: "Tejiendo Ilusiones",
@@ -48,7 +48,7 @@ export function RoyalCourt() {
     {
       name: "Wendy Alexandra Sarmiento Castillo",
       title: "Reina del Turismo Loja 2024",
-      image: "/wendyFoto.webp",
+      image: "wendyFoto.webp",
       description:
         "Su propósito se centra en el valor de la empatía y la acción colectiva, fomentando el turismo y el desarrollo local.",
       project: "Patitas de Amor",

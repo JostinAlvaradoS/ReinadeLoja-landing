@@ -48,7 +48,7 @@ export default function Home() {
       <section id="inicio" className="h-screen relative flex items-end">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/coronacion-cuatro-reinas.webp"
+            src="coronacion-cuatro-reinas.webp"
             alt="Reinas de Loja 2024"
             fill
             quality={95}
