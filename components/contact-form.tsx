@@ -1,7 +1,6 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -14,16 +13,36 @@ import { FadeIn } from "@/components/animations"
 export function ContactForm() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
+  const [error, setError] = useState<string | null>(null)
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     setIsSubmitting(true)
+    setError(null)
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500))
+    const formData = new FormData(e.currentTarget)
+    const objectData = Object.fromEntries(formData)
 
-    setIsSubmitting(false)
-    setIsSubmitted(true)
+    try {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT!, {
+        method: "POST",
+        body: JSON.stringify(objectData),
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+      })
+
+      if (!response.ok) {
+        throw new Error("Error al enviar el formulario. Inténtalo de nuevo.")
+      }
+
+      setIsSubmitted(true)
+    } catch (error) {
+      setError(error instanceof Error ? error.message : "Ocurrió un error inesperado.")
+    } finally {
+      setIsSubmitting(false)
+    }
   }
 
   if (isSubmitted) {
@@ -48,12 +67,14 @@ export function ContactForm() {
   return (
     <FadeIn>
       <form onSubmit={handleSubmit} className="bg-white rounded-lg p-8 shadow-md">
+        {error && <p className="text-red-500 mb-4">{error}</p>}
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="space-y-2">
               <Label htmlFor="firstName">Nombre</Label>
               <Input
                 id="firstName"
+                name="firstName"
                 placeholder="Tu nombre"
                 required
                 className="border-[#D8B4A0] focus-visible:ring-[#9D8189]"
@@ -63,6 +84,7 @@ export function ContactForm() {
               <Label htmlFor="lastName">Apellido</Label>
               <Input
                 id="lastName"
+                name="lastName"
                 placeholder="Tu apellido"
                 required
                 className="border-[#D8B4A0] focus-visible:ring-[#9D8189]"
@@ -74,6 +96,7 @@ export function ContactForm() {
             <Label htmlFor="email">Correo electrónico</Label>
             <Input
               id="email"
+              name="_replyto"
               type="email"
               placeholder="tucorreo@ejemplo.com"
               required
@@ -85,6 +108,7 @@ export function ContactForm() {
             <Label htmlFor="phone">Teléfono</Label>
             <Input
               id="phone"
+              name="phone"
               placeholder="Tu número de teléfono"
               required
               className="border-[#D8B4A0] focus-visible:ring-[#9D8189]"
@@ -93,7 +117,7 @@ export function ContactForm() {
 
           <div className="space-y-2">
             <Label htmlFor="interest">Tipo de apoyo</Label>
-            <Select>
+            <Select name="interest">
               <SelectTrigger className="border-[#D8B4A0] focus:ring-[#9D8189]">
                 <SelectValue placeholder="Selecciona una opción" />
               </SelectTrigger>
@@ -110,6 +134,7 @@ export function ContactForm() {
             <Label htmlFor="message">Mensaje</Label>
             <Textarea
               id="message"
+              name="message"
               placeholder="Cuéntanos cómo te gustaría apoyar..."
               rows={4}
               className="border-[#D8B4A0] focus-visible:ring-[#9D8189]"
@@ -124,4 +149,3 @@ export function ContactForm() {
     </FadeIn>
   )
 }
-
