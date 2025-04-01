@@ -21,14 +21,13 @@ export function ProjectsSection() {
   const projects: Project[] = [
     {
       title: "Creciendo Contigo",
-      description: "Como Reina de Loja, mi proyecto principal se enfoca en brindar apoyo integral a mujeres, niñas y adolescentes con discapacidad que residen en casas hogares, con el objetivo de transformar su día a día y mejorar su calidad de vida.",
+      description: "Como Reina de Loja, mi proyecto principal se enfoca en brindar apoyo integral a mujeres, niñas y adolescentes con discapacidad que residen en casas hogares, con el objetivo de transformar su día a día y mejorar su calidad de vida. Con pequeños gestos de cariño y dedicación, podemos transformar la vida de una niña sin hogar, ofreciéndole el amor y apoyo que le permita sentirse valiosa y llena de esperanza cada día.",
       features: [
-        "A través de este proyecto, quiero ofrecer un entorno lleno de apoyo y cariño, donde cada una de ellas pueda sentirse acompañada y valorada.",
-        "Mi propósito es garantizar que nunca más se sientan solas y que cada día esté lleno de momentos de alegría, dignidad y esperanza.",
-        "Además, busco facilitar su rutina diaria, proporcionando las herramientas necesarias para hacer su vida más accesible y llevadera, mientras se fomenta su bienestar emocional y físico.",
+        "Un entorno lleno de apoyo y cariño, donde cada una de ellas pueda sentirse acompañada y valorada.",
+        "Garantizar que nunca más se sientan solas y que cada día esté lleno de momentos de alegría, dignidad y esperanza.",
+        "Facilitar su rutina diaria, proporcionando las herramientas necesarias para hacer su vida más accesible y llevadera, mientras se fomenta su bienestar emocional y físico.",
         "La visión de 'Creciendo Contigo' es crear una red de apoyo que comience en el Hogar San Camilo de Lellis, con la meta de expandirnos y llegar a otras casas hogares de la ciudad, brindando el cuidado adecuado a todas las niñas y adolescentes que lo necesiten.",
         "Invitamos a fisioterapeutas, médicos, psicopedagogos o estudiantes en estas áreas, empresas que deseen contribuir con recursos esenciales y a todas las personas con el corazón dispuesto a apadrinar a una niña con amor y apoyo incondicional.",
-        "Con pequeños gestos de cariño y dedicación, podemos transformar la vida de una niña sin hogar, ofreciéndole el amor y apoyo que le permita sentirse valiosa y llena de esperanza cada día."
       ],
       image: "proyectos/camila.webp",
       queenName: "Camila Muñoz Neira",
@@ -39,13 +38,14 @@ export function ProjectsSection() {
     {
       title: "Raíces de Amor",
       description:
-        "Como Reina de la Fundación de Loja, he decidido dedicar mi proyecto social a quienes tanto nos han dado: nuestros adultos mayores. Detrás de cada mirada hay una enseñanza y detrás de cada sonrisa hay un recuerdo que merece ser compartido.",
+        "Como Reina de la Fundación de Loja, he decidido dedicar mi proyecto social a quienes tanto nos han dado: nuestros adultos mayores. Detrás de cada mirada hay una enseñanza y detrás de cada sonrisa hay un recuerdo que merece ser compartido. Porque una sociedad que cuida a sus mayores, es una sociedad con memoria, con gratitud y con corazón.",
       features: [
         "Crear espacios donde nuestros abuelitos puedan sentirse acompañados, valorados y activos",
         "Talleres de arte, música y manualidades",
         "Ejercicios físicos adaptados para adultos mayores",
         "Actividades intergeneracionales para fortalecer vínculos",
         "Mantener viva la memoria de la ciudad a través de quienes la construyeron",
+        "Invitamos a: psicólogos, fisioterapeutas, artistas, músicos, terapeutas ocupacionales y a todas las personas con el deseo de regalar su tiempo y cariño."
       ],
       image: "proyectos/Lola_proyecto.webp",
       queenName: "María Dolores Samaniego",
@@ -56,13 +56,14 @@ export function ProjectsSection() {
     {
       title: "Tejiendo Ilusiones",
       description:
-        "Como Reina Loja Federal, he elegido enfocar mi proyecto social en la transformación de nuestros espacios públicos. Mi objetivo es intervenir un barrio periférico, con la meta de crear juegos para los niños que viven en estas comunidades.",
+        "Como Reina Loja Federal, he elegido enfocar mi proyecto social en la transformación de nuestros espacios públicos. Mi objetivo es intervenir un barrio periférico, con la meta de crear juegos para los niños que viven en estas comunidades. Cada pequeño cambio en nuestros espacios, es una gran oportunidad para sembrar esperanza, creatividad y un futuro lleno de sonrisas para nuestros niños.",
       features: [
         "Crear un taller colaborativo para construir juegos",
         "Utilizar materiales accesibles y fáciles de gestionar",
         "Aplicar técnicas de tejido para crear estructuras funcionales",
         "Promover la creatividad y el trabajo en equipo",
         "Transformar espacios públicos en lugares de esperanza y alegría",
+        "Invitamos a arquitectos, estudiantes de arquitectura, voluntarios en la gestión de materiales, personas con experiencia en técnicas de tejido y a todos aquellos con el deseo de aportar su tiempo, conocimiento y esfuerzo para transformar estos espacios."
       ],
       image: "proyectos/proyectoClau.webp",
       queenName: "Claudia Guachizaca Peralta",
@@ -72,13 +73,14 @@ export function ProjectsSection() {
     },
     {
       title: "Apadrinamiento Virtual de Perritos",
-      description: "Como Reina del turismo, propongo este proyecto con el propósito de darles una segunda oportunidad a perritos en adopción que han sido rescatados de situaciones difíciles. Muchos de ellos pasan desapercibidos debido a la falta de visibilidad, y es ahí donde cada uno de nosotros puede marcar la diferencia.",
+      description: "Como Reina del turismo, propongo este proyecto con el propósito de darles una segunda oportunidad a perritos en adopción que han sido rescatados de situaciones difíciles. Muchos de ellos pasan desapercibidos debido a la falta de visibilidad, y es ahí donde cada uno de nosotros puede marcar la diferencia. Porque el amor más puro tiene cuatro patas y una cola que nunca deja de moverse. Ellos nos dan su amor incondicionalmente, lo mínimo que podemos hacer es darles una vida digna y feliz.",
       features: [
         "Uso de códigos QR en redes sociales y distintos espacios de la ciudad para aumentar la visibilidad de los perritos en adopción.",
         "Acceso a una plataforma con la historia, personalidad y necesidades de cada perrito disponible para adopción.",
         "Apadrinamiento virtual sin responsabilidades económicas ni de cuidado directo, solo difusión en redes sociales.",
         "Posibilidad de contribuir con donaciones de alimentos, juguetes e insumos para mejorar la calidad de vida de los perritos mientras esperan un hogar.",
-        "Colaboración con rescatistas, albergues, veterinarios y empresas comprometidas con el bienestar animal."  
+        "Colaboración con rescatistas, albergues, veterinarios y empresas comprometidas con el bienestar animal.",  
+        "Invitamos a voluntarios, amantes de los animales, organizaciones que promuevan la adopción responsable y a todas las personas dispuestas a brindar su tiempo y apoyo para ayudar a que más perritos encuentren un hogar digno."
       ],
       image: "proyectos/Wendy_proyecto.webp",
       queenName: "Wendy Sarmiento Castillo",
@@ -142,10 +144,6 @@ export function ProjectsSection() {
                       </li>
                     ))}
                   </ul>
-                  <p className="text-[#9D8189] text-lg mb-8 leading-relaxed">
-                    Tu aporte puede transformar vidas y brindar nuevas oportunidades. Cada contribución es un paso hacia
-                    un futuro mejor.
-                  </p>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <Button className="bg-[#D8B4A0] hover:bg-[#9D8189] text-white text-base py-6 px-8" asChild>
                       <Link href="#contacto">Quiero apoyar</Link>
@@ -189,10 +187,6 @@ export function ProjectsSection() {
                       </li>
                     ))}
                   </ul>
-                  <p className="text-[#9D8189] text-lg mb-8 leading-relaxed">
-                    Tu aporte puede transformar vidas y brindar nuevas oportunidades. Cada contribución es un paso hacia
-                    un futuro mejor.
-                  </p>
                   <div className="flex flex-col sm:flex-row gap-5">
                     <Button className="bg-[#D8B4A0] hover:bg-[#9D8189] text-white text-base py-6 px-8" asChild>
                       <Link href="#contacto">Quiero apoyar</Link>
