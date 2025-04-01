@@ -44,7 +44,7 @@ export function Gallery() {
     },
     {
       src: "gallery/2.webp",
-      alt: "Reina de Loja, Fundación y Loja Federal, en conjunto con el juez y el director de la Judicatura, en la presentación del libro 'Derechos de la Niñez y la Adolescencia', de autoría del Dr. Luis Samaniego.",
+      alt: "Reinas de Loja en conjunto con el juez y el director de la Judicatura, en la presentación del libro 'Derechos de la Niñez y la Adolescencia', de autoría del Dr. Luis Samaniego.",
     },
     {
       src: "gallery/3.webp",
